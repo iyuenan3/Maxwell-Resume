@@ -1,6 +1,6 @@
 # 李越男 Maxwell
 15958170755 | limaxwell93@gmail.com  
-[LinkedIn](linkedin.com/in/iyuenan3) | [GitHub](github.com/iyuenan3) | [Blog](limaxwell93.wordpress.com)
+LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3 | 博客：https://limaxwell93.wordpress.com
 
 ---
 
