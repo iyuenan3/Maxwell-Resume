@@ -15,29 +15,37 @@
 |----------|----------|----------|
 | Markdown (.md) | ✅ 保留 | ✅ 保留（存档） |
 | HTML (.html) | ✅ 仅最新版本 | ❌ 不保留 |
-| PDF (.pdf) | ❌ 不生成 | ❌ 不保留 |
+| PDF (.pdf) | ❌ 用户自行打印 | ❌ 不保留 |
 
 ### 3. 存档规则
 - **每次修改基础版本 MD 后** → 立即复制一份带时间戳的存档
-- **历史版本只保留 MD** → 删除 HTML 和 PDF
+- **历史版本只保留 MD** → 删除 HTML
 - **最新版本保留 MD + HTML** → 便于浏览器预览和打印
 
 ### 4. HTML 规范
 - **严格控制在 2 页 A4 纸**
-- **页边距**: 15mm
+- **页边距**: 20mm（上下）, 18mm（左右）
 - **字号**: 10.5pt（正文）
-- **行距**: 1.4
+- **行距**: 1.5
 - **所有超链接显示完整地址**（便于 PDF 查看）
-  - ✅ `https://github.com/iyuenan3/k8s-om`
-  - ❌ `[k8s-om](github.com/iyuenan3/k8s-om)`
+- **排版风格**: 专业简历风格
+  - 蓝色主题色（#3498db）
+  - 左侧边框强调章节
+  - 渐变背景突出标题
+  - 清晰的层级结构
 
 ### 5. 打印 PDF
 - 在浏览器中打开 HTML
 - Ctrl+P（或 Cmd+P）
 - 选择"另存为 PDF"
 - 纸张大小：A4
-- 页边距：默认（15mm 已在 CSS 中设置）
+- 页边距：默认（CSS 中已设置）
 - 确认页数为 2 页
+
+### 6. 文档维护
+- **README.md**: 项目说明和使用指南
+- **VERSIONS.md**: 版本管理规则和历史记录
+- **及时更新**: 每次修改后同步更新这两个文件
 
 ---
 
@@ -80,11 +88,17 @@ python3 generate-html.py
 ```bash
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M)
 cp resumes/base/resume-base.md resumes/base/resume-base-$TIMESTAMP.md
-# 删除历史 HTML（如果有）
-rm -f resumes/base/resume-base-*.html
+rm -f resumes/base/resume-base-*.html  # 删除历史 HTML
 ```
 
-4. **推送到 GitHub**
+4. **更新文档**
+```bash
+# 更新 README.md 和 VERSIONS.md
+vim resumes/README.md
+vim resumes/VERSIONS.md
+```
+
+5. **推送到 GitHub**
 ```bash
 cd resumes
 git add .
@@ -94,28 +108,26 @@ git push origin main
 
 ---
 
-## 📊 版本追踪
-
-建议在表格中记录：
+## 📊 版本历史
 
 | 版本 | 文件名 | 创建时间 | 主要修改 |
 |------|--------|----------|----------|
-| v1.0 | `resume-base-2026-03-11-12-36.md` | 2026-03-11 12:36 | 初始版本（删除关键指标汇总和岗位匹配度说明） |
+| v1.0 | `resume-base-2026-03-11-12-36.md` | 2026-03-11 12:36 | 初始版本（删除关键指标汇总和岗位匹配度说明，统一超链接格式） |
 
 ---
 
 ## 💡 注意事项
 
 ### 超链接格式
-- ✅ **正确**: `LinkedIn: https://linkedin.com/in/iyuenan3`
-- ❌ **错误**: `[LinkedIn](linkedin.com/in/iyuenan3)`
+- ✅ **正确**: `https://github.com/iyuenan3/k8s-om`
+- ❌ **错误**: `[k8s-om](github.com/iyuenan3/k8s-om)`
 - **原因**: PDF 中需要看到完整链接地址
 
 ### 页数控制
 - 如果超过 2 页，可以：
   - 删减次要内容
   - 缩小字号（不低于 10pt）
-  - 调整行距（不低于 1.3）
+  - 调整行距（不低于 1.4）
   - 合并相似条目
 
 ### 存档频率
@@ -123,7 +135,11 @@ git push origin main
 - **定制版本**: 根据岗位 JD 调整时存档
 - **时间戳**: 精确到分钟
 
+### 文档更新
+- **README.md**: 项目说明，包含可用版本和使用方法
+- **VERSIONS.md**: 版本管理规则和历史记录
+- **及时性**: 每次修改后必须同步更新这两个文件
+
 ---
 
-*最后更新：2026-03-11 12:36*  
-*规则制定：Maxwell Li*
+*版本管理规则制定：2026-03-11*
