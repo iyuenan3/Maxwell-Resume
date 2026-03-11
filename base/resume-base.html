@@ -107,9 +107,8 @@ LinkedIn: <code>https://linkedin.com/in/iyuenan3</code> | GitHub: <code>https://
 <h4>1. AI 数字员工系统（OpenClaw 落地）</h4>
 <ul>
 <li><strong>从 0 到 1 搭建数字员工团队</strong>，基于 OpenClaw 框架为各部门定制智能助手，覆盖数据统计分析、文案编写、报表生成等场景</li>
-<li><strong>个人项目 PetsLog</strong>：独立开发宠物健康管理系统（uni-app + Vue3 + uniCloud），实现用药记录、健康报告、数据备份等核心功能，GitHub 开源</li>
-<li><strong>技术栈</strong>：OpenClaw、Python、uni-app、Vue3、uniCloud 阿里云、Notion API</li>
-<li><strong>价值</strong>：减少重复性人工操作 60%+，提升跨部门协作效率</li>
+<li><strong>技术栈</strong>：OpenClaw、Python、飞书 API、Notion API、阿里云 Embedding</li>
+<li><strong>价值</strong>：减少重复性人工操作 60%+，数据统计效率提升 70%，文案编写时间减少 50%</li>
 </ul>
 <h4>2. 需求中台化与产品标准建设（从 0 到 1 搭建体系）</h4>
 <ul>
@@ -143,13 +142,6 @@ LinkedIn: <code>https://linkedin.com/in/iyuenan3</code> | GitHub: <code>https://
 <li>基于 SRE 经验优化云资源配置，阿里云采购成本降低 31%</li>
 <li>复用已闭店门店商户资源与收款账户，零投入支撑 3 家新门店开业</li>
 </ul>
-<h4>7. 2026 年度规划（战略思维）</h4>
-<ul>
-<li><strong>全渠道生态建设</strong>：上线支付宝/抖音小程序，接入美团/小红书团购核销，推进与客如云收银系统深度打通</li>
-<li><strong>会员体系与营销权益</strong>：构建骑咖积分池、骑行卡产品矩阵（月卡/季卡/年卡），实现权益×商城联动</li>
-<li><strong>数据中台建设</strong>：车辆能效分析、环境关联模型（天气数据）、全维度报表自动化</li>
-<li><strong>团队建设与安全保障</strong>：启动人才梯队建设，构建"资产级"技术文档体系和"全链路"安全监控预警机制</li>
-</ul>
 <hr />
 <h3>Nokia | DevOps Engineer | 2018.08 - 2024.04</h3>
 <p><strong>核心成果</strong>：无线接入网络（RAN）容器化平台建设与自动化运维体系</p>
@@ -177,22 +169,17 @@ LinkedIn: <code>https://linkedin.com/in/iyuenan3</code> | GitHub: <code>https://
 - <strong>算法优化</strong>：采用 ORB 和 APAP 算法提高精度，Matlab 仿真测试
 - <strong>对比测试</strong>：与海康黑光球机进行对比测试，制定评估标准</p>
 <hr />
-<h2>开源项目</h2>
-<h3>k8s-om（https://github.com/iyuenan3/k8s-om）</h3>
-<p>Kubernetes 运维自动化工具集（Ansible Playbooks）
-- 批量创建租户并配置权限与用量
-- 配置 Python 环境、安装 Helm3 及常用命令
-- 支持多租户批量处理与基本配置</p>
-<h3>PetsLog 系列项目（零代码编程实践）</h3>
-<p><strong>PetsLog</strong>（https://github.com/iyuenan3/PetsLog）
-- 开发方式：Cursor AI 辅助开发
-- 技术栈：uni-app + Vue3 + uniCloud 阿里云
-- 核心功能：宠物健康管理、用药记录、数据可视化</p>
-<p><strong>OpenClaw-PetsLog</strong>（https://github.com/iyuenan3/OpenClaw-PetsLog）
-- 开发方式：OpenClaw + Qwen3.5-Plus 智能体协作开发
-- 技术栈：uni-app + Vue3 + uniCloud 阿里云 + ECharts + Notion API
-- 核心功能：用药记录、健康报告、数据备份、提醒推送、离线模式、语音输入
-- 技术亮点：
+<h2>个人项目</h2>
+<h3>PetsLog 宠物健康管理系统（零代码编程实践）</h3>
+<p><strong>PetsLog</strong>（<code>https://github.com/iyuenan3/PetsLog</code>）
+- <strong>开发方式</strong>：Cursor AI 辅助开发
+- <strong>技术栈</strong>：uni-app + Vue3 + uniCloud 阿里云
+- <strong>核心功能</strong>：宠物健康管理、用药记录、数据可视化</p>
+<p><strong>OpenClaw-PetsLog</strong>（<code>https://github.com/iyuenan3/OpenClaw-PetsLog</code>）
+- <strong>开发方式</strong>：OpenClaw + Qwen3.5-Plus 智能体协作开发
+- <strong>技术栈</strong>：uni-app + Vue3 + uniCloud 阿里云 + ECharts + Notion API
+- <strong>核心功能</strong>：用药记录、健康报告、数据备份、提醒推送、离线模式、语音输入
+- <strong>技术亮点</strong>：
   - 微信小程序 + H5 网页端双平台支持
   - Playwright 自动化测试 60 个用例（56.7% 通过率）
   - 完整的 CI/CD 流程（GitHub Actions）
@@ -201,6 +188,11 @@ LinkedIn: <code>https://linkedin.com/in/iyuenan3</code> | GitHub: <code>https://
 - 自然语言需求描述 + AI 代码生成 + 自动化测试验证
 - 快速原型迭代：从想法到可运行产品 &lt; 1 周
 - 技术选型：uni-app（跨平台）、uniCloud（后端即服务）、AI 智能体编排</p>
+<h3>k8s-om Kubernetes 运维工具</h3>
+<p><strong>k8s-om</strong>（<code>https://github.com/iyuenan3/k8s-om</code>）
+- Kubernetes 运维自动化工具集（Ansible Playbooks）
+- 批量创建租户并配置权限与用量
+- 配置 Python 环境、安装 Helm3 及常用命令</p>
 <hr />
 <h2>教育经历</h2>
 <p><strong>杭州电子科技大学 | 自动化 | 本科 | 2012.09 - 2016.06</strong>
