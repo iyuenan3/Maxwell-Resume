@@ -7,12 +7,12 @@
 ## 📄 可用版本
 
 ### 1. 基础版本
-**文件**: `base/resume-base.html`  
+**文件**: `base/resume-base.md`  
 **适用**: 海投、不确定具体岗位时  
 **特点**: 包含完整工作经历和技能
 
 ### 2. OpenClaw 自动化集成工程师
-**文件**: `versions/openclaw-integration-engineer.html`  
+**文件**: `versions/openclaw-integration-engineer.md`  
 **适用**: AI 自动化、Agent 开发、API 集成岗位  
 **核心匹配**:
 - OpenClaw 数字员工系统实战
@@ -25,11 +25,8 @@
 
 ## 📥 使用方法
 
-### 查看/打印简历
-1. 在浏览器中打开 HTML 文件
-2. Ctrl+P（或 Cmd+P）打印
-3. 选择"另存为 PDF"
-4. 确认 A4 纸张，2 页
+### 查看简历
+直接用文本编辑器或 Markdown 查看器打开 MD 文件。
 
 ### 下载
 ```bash
@@ -37,6 +34,9 @@
 git clone https://github.com/iyuenan3/Maxwell-Resume.git
 cd Maxwell-Resume
 ```
+
+### 自行导出 PDF
+如需 PDF，可使用任意 Markdown 编辑器导出（如 Typora、VS Code）。
 
 ---
 
@@ -51,13 +51,16 @@ cd Maxwell-Resume
 
 ---
 
-## 📝 版本管理
+## 📝 简历结构
 
-- **工作文件**: 不带时间戳的 MD/HTML 文件
-- **历史存档**: 带时间戳的 MD 文件（仅 MD）
-- **更新流程**: 编辑 MD → 生成 HTML → 创建存档 → 推送 GitHub
+所有简历版本固定为以下 6 大板块：
 
-详细规则请查看 [VERSIONS.md](VERSIONS.md)
+1. **个人定位** - 职业定位和核心优势
+2. **核心技能** - 技术栈和能力清单
+3. **工作经历** - 按时间倒序排列
+4. **个人项目** - 开源项目和个人作品
+5. **教育经历** - 学历和校园活动
+6. **个人专利** - 专利列表
 
 ---
 

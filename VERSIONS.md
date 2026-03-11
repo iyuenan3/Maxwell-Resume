@@ -1,94 +1,60 @@
 # 简历版本管理规则
 
-## 📋 核心规则（2026-03-11 13:06 更新）
+## 📋 核心规则
 
 ### 1. 文件命名
 - **不带时间戳** = 最新版本（工作文件）
-  - `resume-base.md` - 基础版本最新工作文件
-  - `openclaw-integration-engineer.md` - OpenClaw 岗位最新工作文件
-- **带时间戳** = 历史存档（仅 MD）
-  - `resume-base-2026-03-11-13-06.md` - 历史存档副本
+  - `resume-base.md` - 基础版本
+  - `openclaw-integration-engineer.md` - OpenClaw 岗位版
+- **带时间戳** = 历史备份（仅保留一份）
+  - `resume-base-2026-03-11-13-27.md` - 备份版本
   - 格式：`YYYY-MM-DD-HH-MM`
 
-### 2. 文件类型管理
-| 文件类型 | 最新版本 | 历史版本 |
-|----------|----------|----------|
-| Markdown (.md) | ✅ 保留 | ✅ 保留（存档） |
-| HTML (.html) | ✅ 仅最新版本 | ❌ 不保留 |
-| PDF (.pdf) | ❌ 用户自行打印 | ❌ 不保留 |
+### 2. 文件类型
+- **只保留 Markdown (.md)**
+- ❌ 不生成 HTML
+- ❌ 不生成 PDF
 
-### 3. 存档规则
-- **每次修改基础版本 MD 后** → 立即复制一份带时间戳的存档
-- **历史版本只保留 MD** → 删除 HTML
-- **最新版本保留 MD + HTML** → 便于浏览器预览和打印
+### 3. 版本管理
+- **最新版本**: 无时间戳的 MD 文件（直接编辑）
+- **历史备份**: 每次重大修改后复制一份带时间戳的备份
+- **仅保留一份备份**: 删除旧备份，只保留最新版备份
 
-### 4. HTML 规范（重要！）
+### 4. 简历结构（固定 6 大板块）
 
-#### 4.1 页数控制
-- **严格控制在 2 页 A4 纸**
-- 如果超过 2 页，继续压缩参数
+所有简历版本必须按以下顺序组织：
 
-#### 4.2 压缩参数（极限版）
-- **页边距**: 8mm（上下）, 10mm（左右）
-- **字号**: 9.5pt（正文）, 8.5pt（code）
-- **行距**: 1.3
-- **段落间距**: 3px
-- **列表间距**: 3px
-- **标题间距**: 10px/8px/6px
+1. **个人定位**
+   - 职业定位（如：技术负责人 / AI 工程化专家）
+   - 核心优势概述
 
-#### 4.3 URL 完整显示（❗极其重要）
-**所有超链接必须在打印为 PDF 时显示完整 URL 地址**
+2. **核心技能**
+   - 按类别列出技术栈
+   - 包含量化成果（如：成本优化 31%）
 
-**实现方式**:
-```python
-import re
+3. **工作经历**
+   - 按时间倒序排列
+   - 每段经历包含：公司 | 职位 | 时间
+   - 核心成果 + 详细职责
 
-def url_to_link(match):
-    url = match.group(0)
-    return f'<a href="{url}">{url}</a>'
+4. **个人项目**
+   - 开源项目
+   - 个人作品
+   - 包含 GitHub 链接
 
-html_content = markdown.markdown(md_content, extensions=['tables', 'fenced_code'])
-html_content = re.sub(r'https?://[^\s\)">]+', url_to_link, html_content)
-```
+5. **教育经历**
+   - 学校 | 专业 | 学历 | 时间
+   - 主修课程
+   - 校园活动
 
-**效果对比**:
-- ✅ **正确**: `<a href="https://...">https://...</a>` - 链接文字和地址相同
-- ❌ **错误**: `<a href="https://...">点击这里</a>` - 看不到 URL
+6. **个人专利**
+   - 专利列表
+   - 包含专利号
 
-**CSS 样式**:
-```css
-a { 
-    color: #3498db; 
-    text-decoration: none; 
-    word-break: break-all;  /* 防止长 URL 溢出 */
-}
-@media print { 
-    a { 
-        text-decoration: none !important; 
-        color: #2c3e50 !important;  /* 打印时显示深色 */
-    }
-}
-```
-
-#### 4.4 排版风格
-- **蓝色主题**: #3498db
-- **左侧边框**: h2 标题 2px 蓝色边框
-- **打印优化**: 移除渐变背景
-
-### 5. 打印 PDF
-- 在浏览器中打开 HTML（推荐 Chrome）
-- Ctrl+P（或 Cmd+P）
-- 选择"另存为 PDF"
-- 纸张大小：A4
-- 页边距：默认（CSS 中已设置 8mm/10mm）
-- **确认页数：必须刚好 2 页**
-- **确认 URL：所有链接都显示完整地址**
-
-### 6. 文档维护
-- **README.md**: 项目说明和使用指南
-- **VERSIONS.md**: 版本管理规则和历史记录
-- **及时更新**: 每次修改后同步更新这两个文件
-- **禁止**: 文件末尾不要有【最后更新】之类的提示
+### 5. URL 格式
+- ✅ **正确**: `https://github.com/iyuenan3/k8s-om`（完整 URL）
+- ❌ **错误**: `[k8s-om](github.com/iyuenan3/k8s-om)`（Markdown 链接）
+- **原因**: 保持简洁，便于阅读和复制
 
 ---
 
@@ -97,13 +63,11 @@ a {
 ```
 resumes/
 ├── base/
-│   ├── resume-base.md                     # ✅ 最新版本（工作文件）
-│   ├── resume-base.html                   # ✅ 最新版本 HTML（2 页）
-│   └── resume-base-2026-03-11-13-06.md    # 📦 历史存档（仅 MD）
+│   ├── resume-base.md                     # ✅ 最新版本
+│   └── resume-base-2026-03-11-13-27.md    # 📦 历史备份（仅一份）
 ├── versions/
 │   ├── openclaw-integration-engineer.md          # ✅ 最新版本
-│   ├── openclaw-integration-engineer.html        # ✅ 最新版本 HTML（2 页）
-│   └── openclaw-integration-engineer-2026-03-11-13-06.md  # 📦 历史存档
+│   └── openclaw-integration-engineer-2026-03-11-13-27.md  # 📦 历史备份
 ├── README.md
 └── VERSIONS.md（本文件）
 ```
@@ -118,36 +82,18 @@ resumes/
 ```bash
 vim resumes/base/resume-base.md
 # 或
-vim resumes/versions/openclaw-integration-engineer.md
+vim resumes/versions/<岗位>.md
 ```
 
-2. **生成 HTML（URL 完整显示）**
-```python
-import markdown
-import re
-
-def url_to_link(match):
-    url = match.group(0)
-    return f'<a href="{url}">{url}</a>'
-
-html_content = markdown.markdown(md_content, extensions=['tables', 'fenced_code'])
-html_content = re.sub(r'https?://[^\s\)">]+', url_to_link, html_content)
-```
-
-3. **创建存档**
+2. **创建备份（重大修改时）**
 ```bash
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M)
 cp resumes/base/resume-base.md resumes/base/resume-base-$TIMESTAMP.md
-rm -f resumes/base/resume-base-*.html  # 删除历史 HTML
+# 删除旧备份
+rm -f resumes/base/resume-base-2026-*.md  # 保留最新版备份
 ```
 
-4. **更新文档**
-```bash
-vim resumes/README.md
-vim resumes/VERSIONS.md
-```
-
-5. **推送到 GitHub**
+3. **推送到 GitHub**
 ```bash
 cd resumes
 git add .
@@ -159,43 +105,36 @@ git push origin main
 
 ## 📊 版本历史
 
-| 版本 | 文件名 | 创建时间 | 主要修改 |
-|------|--------|----------|----------|
-| v1.0 | `resume-base-2026-03-11-13-06.md` | 2026-03-11 13:06 | 极限压缩页边距到 8mm/10mm，确保 URL 完整显示 |
-| v0.3 | `resume-base-2026-03-11-13-01.md` | 2026-03-11 13:01 | 压缩到 9.5pt/1.35 行距/12mm 页边距 |
-| v0.2 | `resume-base-2026-03-11-12-57.md` | 2026-03-11 12:57 | URL 完整显示修正 |
-| v0.1 | `resume-base-2026-03-11-12-49.md` | 2026-03-11 12:49 | 专业简历排版优化 |
-| v0.0 | `resume-base-2026-03-11-12-36.md` | 2026-03-11 12:36 | 初始版本（删除历史版本重新开始） |
+| 版本 | 文件名 | 创建时间 | 说明 |
+|------|--------|----------|------|
+| v1.0 | `resume-base-2026-03-11-13-27.md` | 2026-03-11 13:27 | 最终版本（固定 6 大板块，删除 HTML/PDF） |
 
 ---
 
 ## 💡 注意事项
 
-### URL 显示（❗最重要）
-- ✅ **必须**: 所有超链接显示完整 URL 地址
-- ✅ **实现**: Python 正则替换，链接文字=URL 地址
-- ✅ **打印**: PDF 中可以看到完整 https://... 地址
-- ❌ **禁止**: 只显示链接文字不显示 URL
+### 内容规范
+- ✅ **简洁**: 只保留核心内容，删除冗余描述
+- ✅ **量化**: 使用数据说明成果（如：成本降低 31%）
+- ✅ **真实**: 所有经历和技能必须真实可靠
+- ✅ **URL**: 使用完整地址，便于复制
 
-### 页数控制
-- **目标**: 严格 2 页 A4
-- **如果超过**: 
-  - 减小页边距（最低 8mm）
-  - 缩小字号（最低 9pt）
-  - 减小行距（最低 1.2）
-  - 删减次要内容
+### 板块顺序
+- **严格遵守** 6 大板块顺序
+- 新增岗位版本时保持一致
+- 不要随意调整顺序
 
-### 存档频率
-- **基础版本**: 每次修改后都存档
-- **定制版本**: 根据岗位 JD 调整时存档
-- **时间戳**: 精确到分钟
+### 备份频率
+- **重大修改**: 创建备份（如结构调整、岗位定制）
+- **小修改**: 直接覆盖（如错别字、时间更新）
+- **仅保留一份**: 删除旧备份，避免仓库膨胀
 
-### 文档更新
-- **README.md**: 项目说明，包含可用版本和使用方法
-- **VERSIONS.md**: 版本管理规则和历史记录
-- **及时性**: 每次修改后必须同步更新
+### 导出 PDF
+- ❌ **仓库不存储** PDF 文件
+- ✅ **自行导出**: 使用 Typora、VS Code 等工具
+- ✅ **按需导出**: 投递时根据要求导出
 
 ---
 
 *版本管理规则制定：2026-03-11*  
-*最后更新：2026-03-11 13:06（URL 完整显示 + 极限压缩）*
+*最后更新：2026-03-11 14:10（删除 HTML/PDF，仅保留 MD）*
