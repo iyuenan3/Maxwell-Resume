@@ -6,71 +6,91 @@
     <title>李越男 Maxwell - 简历</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        @page { size: A4; margin: 8mm 10mm; }
+        @page { size: A4; margin: 10mm 12mm; }
         @media print { 
             body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } 
-            a { text-decoration: none !important; color: #2c3e50 !important; }
-            h2 { background: none !important; border-left: 2px solid #3498db; }
+            a { text-decoration: none !important; color: #333 !important; }
         }
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
-            font-size: 9.5pt;
-            line-height: 1.3;
-            color: #2c3e50;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
             background: #fff;
             max-width: 210mm;
             margin: 0 auto;
-            padding: 8mm 10mm;
+            padding: 10mm 12mm;
         }
         h1 { 
-            font-size: 18pt; 
+            font-size: 20pt; 
             font-weight: bold; 
-            color: #2c3e50; 
-            border-bottom: 2px solid #3498db; 
-            padding-bottom: 5px; 
-            margin-bottom: 8px; 
+            color: #333; 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 8px; 
+            margin-bottom: 10px; 
         }
         .contact { 
-            font-size: 9pt; 
-            color: #7f8c8d; 
-            margin-bottom: 10px; 
-            line-height: 1.35; 
+            font-size: 9.5pt; 
+            color: #555; 
+            margin-bottom: 15px; 
+            line-height: 1.5; 
+        }
+        .contact code { 
+            background: #f5f5f5; 
+            padding: 1px 4px; 
+            border-radius: 2px; 
+            font-size: 9pt;
+            color: #0066cc;
+            margin: 0 2px;
         }
         h2 { 
-            font-size: 11.5pt; 
+            font-size: 13pt; 
             font-weight: bold; 
-            color: #3498db; 
-            border-left: 2px solid #3498db; 
-            padding-left: 6px; 
-            margin: 10px 0 6px 0; 
+            color: #333; 
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 4px; 
+            margin: 15px 0 10px 0; 
         }
         h3 { 
-            font-size: 10pt; 
+            font-size: 11pt; 
             font-weight: bold; 
-            color: #2c3e50; 
-            margin: 8px 0 3px 0; 
+            color: #333; 
+            margin: 10px 0 4px 0; 
         }
         .job-header { 
             display: flex; 
             justify-content: space-between; 
             align-items: baseline; 
-            margin-bottom: 2px; 
+            margin-bottom: 3px; 
         }
-        .job-title { font-weight: bold; color: #2c3e50; font-size: 10pt; }
-        .job-date { color: #7f8c8d; font-size: 9pt; white-space: nowrap; }
-        p { margin: 3px 0; text-align: justify; }
-        ul { margin: 3px 0 3px 15px; padding-left: 2px; }
-        li { margin: 2px 0; color: #34495e; }
-        strong { font-weight: bold; color: #2c3e50; }
-        code { background: #f8f9fa; padding: 1px 3px; border-radius: 2px; font-family: "Consolas", monospace; font-size: 8.5pt; color: #e74c3c; }
-        a { color: #3498db; text-decoration: none; word-break: break-all; }
-        .section { margin-bottom: 8px; }
+        .job-title { font-weight: bold; color: #333; font-size: 11pt; }
+        .job-date { color: #666; font-size: 9.5pt; white-space: nowrap; }
+        p { margin: 5px 0; text-align: justify; }
+        ul { margin: 5px 0 5px 20px; }
+        li { margin: 3px 0; color: #444; }
+        strong { font-weight: bold; color: #333; }
+        code { 
+            background: #f5f5f5; 
+            padding: 1px 4px; 
+            border-radius: 2px; 
+            font-family: "Consolas", "Monaco", monospace; 
+            font-size: 9pt; 
+            color: #0066cc; 
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .section { margin-bottom: 12px; }
+        .patent-list { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 4px; 
+        }
     </style>
 </head>
 <body>
 <h1>李越男 Maxwell</h1>
 <p>15958170755 | limaxwell93@gmail.com<br />
-LinkedIn: <a href="https://linkedin.com/in/iyuenan3">https://linkedin.com/in/iyuenan3</a> | GitHub: <a href="https://github.com/iyuenan3">https://github.com/iyuenan3</a> | 博客：<a href="https://limaxwell93.wordpress.com</p">https://limaxwell93.wordpress.com</p</a>>
+LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3 | 博客：https://limaxwell93.wordpress.com</p>
 <hr />
 <h2>个人定位</h2>
 <p><strong>技术负责人 / AI 工程化专家 / 平台产品负责人</strong><br />
@@ -162,17 +182,17 @@ LinkedIn: <a href="https://linkedin.com/in/iyuenan3">https://linkedin.com/in/iyu
 - <strong>对比测试</strong>：与海康黑光球机进行对比测试，制定评估标准</p>
 <hr />
 <h2>开源项目</h2>
-<h3>k8s-om（<a href="https://github.com/iyuenan3/k8s-om）</h3">https://github.com/iyuenan3/k8s-om）</h3</a>>
+<h3>k8s-om（https://github.com/iyuenan3/k8s-om）</h3>
 <p>Kubernetes 运维自动化工具集（Ansible Playbooks）
 - 批量创建租户并配置权限与用量
 - 配置 Python 环境、安装 Helm3 及常用命令
 - 支持多租户批量处理与基本配置</p>
 <h3>PetsLog 系列项目（零代码编程实践）</h3>
-<p><strong>PetsLog</strong>（<a href="https://github.com/iyuenan3/PetsLog）">https://github.com/iyuenan3/PetsLog）</a>
+<p><strong>PetsLog</strong>（https://github.com/iyuenan3/PetsLog）
 - 开发方式：Cursor AI 辅助开发
 - 技术栈：uni-app + Vue3 + uniCloud 阿里云
 - 核心功能：宠物健康管理、用药记录、数据可视化</p>
-<p><strong>OpenClaw-PetsLog</strong>（<a href="https://github.com/iyuenan3/OpenClaw-PetsLog）">https://github.com/iyuenan3/OpenClaw-PetsLog）</a>
+<p><strong>OpenClaw-PetsLog</strong>（https://github.com/iyuenan3/OpenClaw-PetsLog）
 - 开发方式：OpenClaw + Qwen3.5-Plus 智能体协作开发
 - 技术栈：uni-app + Vue3 + uniCloud 阿里云 + ECharts + Notion API
 - 核心功能：用药记录、健康报告、数据备份、提醒推送、离线模式、语音输入
