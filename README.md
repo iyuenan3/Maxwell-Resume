@@ -1,13 +1,13 @@
 # 李越男 Maxwell
 
 15958170755 | limaxwell93@gmail.com  
-LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3 | 博客：https://maxwellii.com
+LinkedIn: linkedin.com/in/iyuenan3 | GitHub: github.com/iyuenan3 | Blog：maxwellii.com
 
 ---
 
 ## 个人定位
 
-**技术负责人 / AI 工程化专家 / OpenClaw 实战专家**
+**技术负责人 | AI 工程化专家 | OpenClaw 实战专家**
 
 8 年 + 技术研发与管理经验，专注于 AI 数字员工系统、DevOps 平台、IoT 软硬一体化解决方案。具备从 0 到 1 构建企业级 AI 自动化体系的完整经验，擅长将复杂业务流程转化为自动化任务。
 
@@ -15,13 +15,20 @@ LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3
 
 ## 核心技能
 
-- **AI Agent 框架**: OpenClaw（深度实战）、智能体编排、RAG 语义搜索、定时任务调度、Prompt Engineering
-- **开发语言**: Python（8 年 +，自动化工具/API 集成/测试框架）、Shell、C
-- **API 集成**: 飞书全套 API（日历/任务/多维表格/文档/IM）、Notion API、阿里云 API
-- **云平台与 DevOps**: 阿里云（成本优化 31%）、Kubernetes、OpenStack、Docker、Jenkins CI/CD、Helm、Ansible
+### AI 与自动化
+- **AI Agent 框架**: OpenClaw（深度实战）、Claude Code、Cursor、智能体编排、RAG语义搜索、定时任务调度
 - **自动化测试**: Playwright、Robot Framework、GitHub Actions
-- **产品与管理**: RICE 评分模型、MVP 定义、SOP 体系建设、敏捷外包管理、FinOps
-- **IoT 系统**: 设备日志分析、固件优化、弱信号容错设计、O2O 核销链路
+- **API 集成**: 飞书全套 API、Notion API、阿里云 Qwen 和 Embedding
+
+###  技术栈
+- **开发语言**: Python（8年+）、Shell、C
+- **云平台**: 阿里云（成本优化31%）、Kubernetes、OpenStack、Docker
+- **DevOps**: Jenkins CI/CD、Helm、Ansible
+
+###  产品与管理
+- **产品管理**: RICE 评分模型、MVP 定义、SOP 体系建设
+- **项目管理**: 敏捷外包管理、FinOps、需求治理
+- **IoT 系统**: 设备日志分析、固件优化、弱信号容错设计
 
 ---
 
@@ -29,7 +36,7 @@ LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3
 
 ### 杭州全境骑行文旅有限公司 | 软件部主管 | 2025.03 - 至今
 
-**核心成果**：主导公司数字化重构，基于 OpenClaw 构建 AI 数字员工团队，覆盖全国门店系统切换
+**核心成果**：主导公司数字化重构，基于 OpenClaw 构建 AI 数字员工团队，覆盖全国门店系统切换。
 
 **1. OpenClaw 数字员工系统（核心项目）**
 - **从 0 到 1 部署 OpenClaw 框架**，配置多个专用智能体（数据统计、文案编写、日程管理、任务追踪）
@@ -37,7 +44,7 @@ LinkedIn: https://linkedin.com/in/iyuenan3 | GitHub: https://github.com/iyuenan3
   - 集成飞书全套 API（日历/任务/多维表格/文档/IM），实现跨系统数据自动同步
   - 对接 Notion API，构建宠物健康数据自动采集与分析流程
   - 使用阿里云 text-embedding-v4 实现 RAG 语义搜索（Memory Search 功能）
-- **定时任务调度**：配置 cron 表达式实现每日/每周自动化任务（如每日 22:00 自动总结、每日 9:00 用药提醒）
+- **定时任务调度**：配置 cron 表达式实现每日/每周自动化任务（如每日 04:00 自动总结、每日 9:00 外包代码 commit 自动分析）
 - **Prompt 设计**：为不同场景设计专用 Prompt 模板，优化智能体输出质量
 - **业务价值**：减少重复性人工操作 60%+，数据统计效率提升 70%，文案编写时间减少 50%，跨部门协作效率提升 60%
 
