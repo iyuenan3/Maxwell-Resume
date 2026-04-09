@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>李越男_Maxwell_简历</title>
+    <title>李越男_AI产品经理</title>
     <style>
-        /* 极限压缩版：字号 9.2pt，行距 1.32，压榨所有留白 */
+        /* 极限高密度排版：字号 8.8pt，行距 1.32，最大化利用物理空间 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-            font-size: 9.2pt; 
+            font-size: 8.8pt; 
             line-height: 1.32;
             color: #333;
             margin: 0;
@@ -16,10 +16,10 @@
         }
         @page {
             size: A4;
-            margin: 7mm 15mm; 
+            margin: 7mm 12mm; /* 极限安全边距 */
         }
         
-        /* 模块间距极限压缩 */
+        /* 极限压缩模块间距 */
         .section {
             margin-bottom: 8px;
         }
@@ -33,14 +33,14 @@
             margin-bottom: 10px;
         }
         h1 {
-            font-size: 19pt;
+            font-size: 18pt;
             font-weight: 600;
-            margin: 0 0 4px 0;
+            margin: 0 0 3px 0;
             color: #1a5276;
             letter-spacing: 1px;
         }
         .contact-info {
-            font-size: 8.8pt;
+            font-size: 8.5pt;
             color: #555;
             line-height: 1.3;
         }
@@ -50,54 +50,46 @@
         }
 
         /* 标题层级与防孤行 */
-        h2, h3, h4, .skills-category {
+        h2, h3, h4 {
             page-break-after: avoid;
         }
         
         /* 竖线风格，科技蓝配色 */
         h2 {
-            font-size: 11.5pt;
+            font-size: 11pt;
             font-weight: bold;
             color: #1a5276;
             border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 1px;
-            padding-left: 8px;
+            padding-bottom: 2px;
+            padding-left: 6px;
             border-left: 4px solid #1a5276;
             margin: 0 0 5px 0;
             text-transform: uppercase;
         }
         h3 {
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: 600;
-            margin: 0 0 3px 0;
+            margin: 0 0 2px 0;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             color: #222;
         }
         h4 {
-            font-size: 9.5pt;
+            font-size: 9pt;
             font-weight: 600;
             margin: 3px 0 1px 0;
             color: #1a5276;
-        }
-        
-        /* 针对核心技能的分类标题，采用更紧凑的设计 */
-        .skills-category {
-            font-size: 9.5pt;
-            font-weight: 600;
-            color: #1a5276;
-            margin: 3px 0 1px 0;
         }
 
-        /* 文本与列表 */
+        /* 文本与列表：高度紧缩 */
         p {
             margin: 0 0 2px 0;
             text-align: justify;
         }
         ul {
             margin: 0 0 3px 0;
-            padding-left: 16px;
+            padding-left: 14px;
         }
         li {
             margin-bottom: 1px;
@@ -108,7 +100,7 @@
         }
         .date {
             font-weight: normal;
-            font-size: 9.2pt;
+            font-size: 8.8pt;
             color: #666;
         }
         
@@ -116,8 +108,8 @@
         .patents-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1px 15px;
-            font-size: 9.2pt;
+            gap: 1px 10px;
+            font-size: 8.8pt;
         }
         .patents-grid li {
             margin-bottom: 0;
@@ -136,29 +128,18 @@
 
     <div class="section">
         <h2>个人定位</h2>
-        <p><strong>技术负责人 | AI 工程化专家 | OpenClaw 实战专家</strong><br>
-        8 年 + 技术研发与管理经验，专注于 AI 数字员工系统、DevOps 平台、IoT 软硬一体化解决方案。具备从 0 到 1 构建企业级 AI 自动化体系的完整经验，擅长将复杂业务流程转化为自动化任务。</p>
+        <p><strong>技术负责人 | AI 工程化专家 | OpenClaw 实战专家</strong></p>
+        <p>拥有 10 年“技术研发 + 产品管理”复合背景，深耕 AI Agent 系统、DevOps 平台及内部效能工具的产品化落地。具备从 0 到 1 打造企业级 AI 自动化产品的完整生命周期经验。擅长深入业务场景挖掘痛点，通过智能体编排（OpenClaw）与系统集成重构跨部门协作流程，建立标准化 SOP，将复杂业务流转化为自动化产品，实现企业的全面降本增效。</p>
     </div>
 
     <div class="section">
         <h2>核心技能</h2>
-        <div class="skills-category">AI 与自动化</div>
         <ul>
-            <li><strong>AI Agent 框架</strong>: OpenClaw（深度实战）、Claude Code、Cursor、智能体编排、RAG语义搜索、定时任务调度</li>
-            <li><strong>自动化测试</strong>: Playwright、Robot Framework、GitHub Actions</li>
-            <li><strong>API 集成</strong>: 飞书全套 API、Notion API、阿里云 Qwen 和 Embedding</li>
-        </ul>
-        <div class="skills-category">技术栈</div>
-        <ul>
-            <li><strong>开发语言</strong>: Python（8年+）、Shell、C</li>
-            <li><strong>云平台</strong>: 阿里云（成本优化31%）、Kubernetes、OpenStack、Docker</li>
-            <li><strong>DevOps</strong>: Jenkins CI/CD、Helm、Ansible</li>
-        </ul>
-        <div class="skills-category">产品与管理</div>
-        <ul>
-            <li><strong>产品管理</strong>: RICE 评分模型、MVP 定义、SOP 体系建设</li>
-            <li><strong>项目管理</strong>: 敏捷外包管理、FinOps、需求治理</li>
-            <li><strong>IoT 系统</strong>: 设备日志分析、固件优化、弱信号容错设计</li>
+            <li><strong>AI 产品规划与落地</strong>: OpenClaw 深度实战、多智能体协同机制设计、Prompt Engineering、RAG 知识库构建</li>
+            <li><strong>产品与项目管理</strong>: 业务需求分析、MVP 策略定义、RICE 优先级评估、SOP 标准化体系建设、敏捷开发（Scrum）管理</li>
+            <li><strong>业务流程自动化</strong>: 跨系统集成设计（飞书 API 全家桶 / Notion / 阿里云）、Playwright 自动化编排、容错与防风控机制设计</li>
+            <li><strong>技术底座</strong>: Python、Shell、Kubernetes 容器化、自动化测试驱动、持续集成 CI/CD</li>
+            <li><strong>运营与商业支撑</strong>: FinOps（云成本优化）、数字化门店系统重构、IoT 软硬一体化解决方案</li>
         </ul>
     </div>
 
@@ -166,22 +147,32 @@
         <h2>工作经历</h2>
         
         <div class="experience-item">
-            <h3><span>杭州全境骑行文旅有限公司 | 软件部主管</span> <span class="date">2025.03 - 至今</span></h3>
-            <p><strong>核心成果</strong>：主导公司数字化重构，基于 OpenClaw 构建 AI 数字员工团队，覆盖全国门店系统切换。</p>
+            <h3><span>杭州全境骑行文旅有限公司 | 软件部主管 / AI 产品负责人</span> <span class="date">2025.03 - 至今</span></h3>
+            <p><strong>核心成果</strong>：主导公司数字化与自动化重构，基于 OpenClaw 打造企业级 AI 数字员工平台，重塑多部门业务 SOP，推动全国门店系统的平滑切换。</p>
             
-            <h4>1. OpenClaw 数字员工系统（核心项目）</h4>
+            <h4>1. OpenClaw 数字员工平台（核心内部产品）</h4>
+            <p>深入调研各业务线痛点，规划并落地了一套跨部门的 AI 辅助决策与自动化工作平台：</p>
             <ul>
-                <li><strong>从 0 到 1 部署 OpenClaw 框架</strong>，配置多个专用智能体（数据统计、文案编写、日程管理、任务追踪）</li>
-                <li><strong>API 集成与数据处理</strong>：
-                    <ul>
-                        <li>集成飞书全套 API（日历/任务/多维表格/文档/IM），实现跨系统数据自动同步</li>
-                        <li>对接 Notion API，构建宠物健康数据自动采集与分析流程</li>
-                        <li>使用阿里云 text-embedding-v4 实现 RAG 语义搜索（Memory Search 功能）</li>
-                    </ul>
-                </li>
-                <li><strong>定时任务调度</strong>：配置 cron 表达式实现每日/每周自动化任务（如每日 04:00 自动总结、每日 9:00 外包代码 commit 自动分析）</li>
-                <li><strong>Prompt 设计</strong>：为不同场景设计专用 Prompt 模板，优化智能体输出质量</li>
-                <li><strong>业务价值</strong>：减少重复性人工操作 60%+，数据统计效率提升 70%，文案编写时间减少 50%，跨部门协作效率提升 60%</li>
+                <li><strong>新媒体运营赋能</strong>：针对历史订单数据沉淀无法利用的痛点，设计智能分析闭环。引导数字员工分析海量订单数据，精准定位低复购套餐，并输出“储值转券包”的产品优化策略，有效规避合规风险并提升私域用户粘性。</li>
+                <li><strong>软件研发提效</strong>：将需求进度同步、缺陷追踪与自动化测试执行交由 Agent 托管，规范技术对接流程。</li>
+                <li><strong>产品架构与集成</strong>：打通飞书全套 API（文档/多维表格/审批流），实现跨系统数据自动流转；基于阿里云 text-embedding-v4 规划 RAG 检索功能；设计 Cron 调度与场景化 Prompt 模板，保障数字员工稳定输出。</li>
+                <li><strong>业务价值</strong>：成功将人力从繁琐的数据整理中释放，专注于高价值决策。有效提升跨部门协作效率，显著减少重复性人工操作。</li>
+            </ul>
+
+            <h4>2. 小红书全链路自动化运营系统（多 Agent 协作产品）</h4>
+            <p>针对品牌宣传部在全国多地矩阵号运营中“高频、繁琐、耗时”的痛点，设计并落地了一套多 Agent 协作的自动化产品矩阵：</p>
+            <ul>
+                <li><strong>业务流程拆解与重构</strong>：将日常运营拆分为 5 个标准化节点，并分别定义 Agent 角色（文案生成、图片匹配、发布执行、互动引流、运营分析），实现各司其职的流水线作业。</li>
+                <li><strong>自动化策略与防风控设计</strong>：采用 Playwright 驱动真实浏览器模拟拟人化交互；针对小红书页面频改的痛点，设计基于语义化的 UI 定位策略；加入异常重试、频率控制（模拟正常单日互动量）等容错机制，保障业务安全运行。</li>
+                <li><strong>业务价值</strong>：彻底改变品牌部的传统工作方式，单人每日运营时间由 2-3 小时压缩至每周仅需一小时的素材统筹、笔记审核。矩阵账号的曝光规模与自然流量获取能力实现质的跃升。</li>
+            </ul>
+
+            <h4>3. 需求治理与标准化 SOP 建设</h4>
+            <ul>
+                <li><strong>建立需求中台漏斗</strong>：作为跨部门需求枢纽，引入 RICE 评分模型进行需求优先级评估，梳理并确认 54 条关键业务需求。</li>
+                <li><strong>MVP 策略落地</strong>：面对新老系统切换的巨大风险，确立“稳定性优先于功能丰富度”的产品原则，输出《全境骑行系统功能拆分》，保障首家试点（西溪湿地店）无 P0 级事故平滑过渡。</li>
+                <li><strong>SOP 知识库沉淀</strong>：主导编制《后台操作手册》《异常处理 QA 集》《软件配置需求处理》等 7 套标准化文件，重塑内部协同规范，使技术部日常响应频次降低 40%。</li>
+                <li><strong>敏捷转型与降本增效</strong>：推动团队从瀑布流向敏捷（小批量、高频次）转型，交付周期缩短 30%；基于 SRE 经验复盘云资源使用率，优化阿里云架构，实现 IT 采购成本降低 31%。</li>
             </ul>
 
             <h4>2. 需求治理与流程优化</h4>
@@ -259,7 +250,7 @@
         <div class="experience-item">
             <h3><span>PetsLog 宠物健康管理系统（零代码编程实践）</span></h3>
             
-            <h4>OpenClaw-PetsLog (https://github.com/iyuenan3/OpenClaw-PetsLog)</h4>
+            <h4>OpenClaw-PetsLog（https://github.com/iyuenan3/OpenClaw-PetsLog）</h4>
             <ul>
                 <li><strong>开发方式</strong>：OpenClaw + Qwen3.5-Plus 智能体协作开发（零代码编程实践）</li>
                 <li><strong>技术栈</strong>：uni-app + Vue3 + uniCloud 阿里云 + ECharts + Notion API</li>
@@ -284,7 +275,7 @@
         <div class="experience-item">
             <h3><span>k8s-om Kubernetes 运维工具</span></h3>
             
-            <h4>k8s-om (https://github.com/iyuenan3/k8s-om)</h4>
+            <h4>k8s-om（https://github.com/iyuenan3/k8s-om）</h4>
             <ul>
                 <li>Kubernetes 运维自动化工具集（Ansible Playbooks）</li>
                 <li>批量创建租户并配置权限与用量</li>
@@ -295,12 +286,15 @@
 
     <div class="section">
         <h2>教育经历</h2>
-        <h3><span>杭州电子科技大学 | 自动化 | 本科</span> <span class="date">2012.09 - 2016.06</span></h3>
-        <ul>
-            <li>毕业设计：摄像机白平衡算法研究</li>
-            <li>主修课程：C 语言程序设计、单片机技术与应用、自动控制原理、测试技术与传感器、电气控制与 PLC 原理、计算机控制原理等</li>
-            <li><strong>校园活动</strong>：自行车协会会长，第一届"华东高校车协发展论坛"发起人</li>
-        </ul>
+        
+        <div class="experience-item">
+            <h3><span>杭州电子科技大学 | 自动化 | 本科</span> <span class="date">2012.09 - 2016.06</span></h3>
+            <ul>
+                <li>毕业设计：摄像机白平衡算法研究</li>
+                <li>主修课程：C 语言程序设计、单片机技术与应用、自动控制原理、测试技术与传感器、电气控制与 PLC 原理、计算机控制原理等</li>
+                <li><strong>校园活动</strong>：自行车协会会长，第一届"华东高校车协发展论坛"发起人</li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">
