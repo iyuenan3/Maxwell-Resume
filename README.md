@@ -103,6 +103,15 @@ LinkedIn: linkedin.com/in/iyuenan3 | GitHub: github.com/iyuenan3 | Blog：maxwel
 - 自然语言需求描述 + AI 代码生成 + 自动化测试验证
 - 快速原型迭代：从想法到可运行产品 < 1 周
 
+### OpenClaw-Customize-Skills 开源技能库
+
+**OpenClaw-Customize-Skills**（https://github.com/iyuenan3/OpenClaw-Customize-Skills）
+- 个人定制的 OpenClaw Skill 开源项目，包含了一些可以开源的 Skill，展示 AI Agent 工具链开发能力
+- **moltbook-daily**：Moltbook 日报生成器，爬取热门帖子生成抖音风格文案，Cron 定时邮件推送
+- **wordpress-blog-writer**：WordPress 博客写作助手，从主题推荐、大纲编写、HTML 撰写到 GitHub 备份、WordPress 发布全链路自动化
+- **story-writer**：故事创作 Skill，自动获取最火题材，编写大纲，并严格按照大纲字数要求编写文章。
+- 完整的 Skill 开发规范文档，包含安装、配置、测试流程
+
 ### k8s-om Kubernetes 运维工具
 
 **k8s-om**（https://github.com/iyuenan3/k8s-om）
